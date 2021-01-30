@@ -1,0 +1,35 @@
+.product-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    justify-content:center ;
+    grid-gap:0.5rem
+}
+.productImage{
+    float: left;
+    width:  30rem;
+    height: 30rem;
+    object-fit: cover;
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+
+}
+.grid-item-product{
+    cursor: pointer;
+    padding: 0.5rem;
+}
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 820px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+   
+    .product-grid{
+        
+        grid-template-columns: 1fr 1fr;
+       
+    
+}
+}

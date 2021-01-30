@@ -1,0 +1,61 @@
+
+.cart-image{
+   
+    width:  10rem;
+    height: 10rem;
+    object-fit: cover;
+    display: inline-block;
+    height: auto;
+    max-width: 100%;
+    vertical-align: middle;
+
+}
+.item-label{
+    padding: 0.2rem;
+    font-weight: 500;
+    margin-left: 1rem;
+    text-align: left;
+    
+}
+.heading{
+    font-weight: 500;
+    padding: 0.5rem;
+    border-bottom: 1px solid black;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+
+}
+.amountCard{
+    width: 50%;
+    justify-content: space-between;
+    margin-top: 1rem;
+    border-bottom: 1px rgb(212, 205, 205) solid;
+}
+.small-bold{
+    font-weight: 500;
+    color: rgb(110, 110, 110);
+
+}
+.big{
+    font-size: 1.5rem;
+}
+.fix-col{
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 5rem;
+}
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 820px)
+and (-webkit-min-device-pixel-ratio: 2)
+and (orientation: portrait) {
+    .colStuff{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+    }
+    
+}
+

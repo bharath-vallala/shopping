@@ -1,0 +1,93 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.card-shadow{
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+   
+}
+.button-primary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    background-color: black;
+    color: white;
+    border-radius: 0.5rem;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+.avatar{
+    border-radius: 5rem;
+    height: 3rem;
+    width: 3rem;
+    border: 2px solid rgb(102, 98, 98);
+}
+
+.menu-items{
+    border-bottom: 1px solid black;
+    background-color: rgb(228, 228, 227);
+   
+}
+.medium-label{
+    padding: 0.2rem;
+    font-weight: 500;
+    border-bottom: 1px solid black;
+    
+
+}
+.big-heading{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+.sub-heading{
+    font-size: 1.2rem;
+    padding: 0.2rem;
+    color: rgb(34, 31, 31);
+}
+.desc{
+    font-size: 1rem;
+    padding: 0.2rem;
+    font-weight: 500;
+    
+    
+
+}
+.mr3{
+    margin-top: 3rem;
+}
+.mr1{
+    margin-top: 1rem;
+}
+.modalLogin{
+    color: white;
+    background-color: rgb(216, 73, 73);
+    padding: 0.5rem;
+}
+.disable{
+    cursor: not-allowed;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    box-shadow: none;
+}
+.modalDOne{
+    color: white;
+    background-color: rgb(62, 219, 70);
+    padding: 0.5rem;
+}
+
