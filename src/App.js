@@ -18,7 +18,7 @@ function App() {
       <Navbar></Navbar>
       <Switch>
         <Route exact path='/' component={ShowCase}></Route>
-        <Route exact path='/product' component={ProductsList}></Route>
+        <Route exact path='/product/' component={ProductsList}></Route>
         
         <Route exact path='/singleProduct' component={ProductView}></Route>
         <Route exact path='/Cart' component={Cart}></Route>

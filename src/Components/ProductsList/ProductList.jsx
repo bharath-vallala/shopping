@@ -12,9 +12,11 @@ import "./productLIst.styles.css"
     let [gender,setGender]= useState("")
     let [type,setType]=useState("");
 
+    
+
      useEffect(()=>{
          
-         switch (props.type) {
+         switch (props.location.state) {
              case "0":
                 setGender("Mens")
                 setType("shirts")
@@ -34,9 +36,10 @@ import "./productLIst.styles.css"
                  break;
          }
          console.log("dude")
+         console.log(props.location.state)
         
      
-     },[props.type])
+     })
 
      useEffect(()=>{
 
@@ -66,6 +69,9 @@ import "./productLIst.styles.css"
             
             })
     }
+    return () => {
+        props.setCurrentProducts([])
+    }
      },[gender,type])
 
     
@@ -89,7 +95,7 @@ import "./productLIst.styles.css"
               )
             })
           }
-          return <div className='heading-B'>no records found</div>
+          return <div className='heading-B'>Loading PLease wait</div>
      }
     return (
         <div className="grid-col">
