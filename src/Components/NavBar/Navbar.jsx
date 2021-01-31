@@ -77,13 +77,19 @@ function Navbar(props) {
           <li>
             <a onClick={()=>{
                   props.selectedType("0")
-                  history.push("/product")
+                  history.push({ 
+                    pathname: '/product',
+                    state: "0"
+                   })
             }}>Men</a>
           </li>
           <li>
             <a  onClick={()=>{
               props.selectedType("2")
-              history.push("/product")
+              history.push({ 
+                pathname: '/product',
+                state: "2"
+               })
             }}>Women</a>
           </li>
         </ul>
